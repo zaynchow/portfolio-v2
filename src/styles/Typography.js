@@ -27,9 +27,22 @@ const Typography = createGlobalStyle`
     font-family: 'Articulat';
     color: var(--gray-1);
   }
-  h1,h2,h3,h4,h5,h6,p,span{
-    font-family:  'Articulat Bold';
+  h1{
+    font-family:  'Articulat Extra Bold';
   }
+
+  h2{
+    font-family:  'Articulat Bold';
+    font-size: 4.5rem;
+  }
+
+  p,span,li,a{
+    font-family:  'Articulat';
+    font-size: 1.75rem;
+
+  }
+
+
 
 
 `;

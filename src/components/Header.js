@@ -8,17 +8,16 @@ const NavMenuStyles = styled.nav`
     background-color: #484848;
     content: "";
     box-sizing: border-box;
-    display:inline-block;
-    height:1px;
+    display: inline-block;
+    height: 1px;
     width: 80%;
-    left:50%;
-
+    left: 50%;
   }
-  align-items:center;
-  left:50%;
-  top:84px;
+  align-items: center;
+  left: 50%;
+  top: 84px;
   transform: translateX(-50%);
-  width:100%;
+  width: 100%;
   max-width: 1532px;
   position: absolute;
 
@@ -28,9 +27,8 @@ const NavMenuStyles = styled.nav`
   justify-content: space-between;
   column-gap: 80px;
 
-  svg{
-    max-width:100px;
-    
+  svg {
+    max-width: 100px;
   }
   ul {
     max-width: 1200px;
@@ -40,100 +38,89 @@ const NavMenuStyles = styled.nav`
 
     li {
       display: inline-block;
-      
+
       transition: 0.3s ease background-color;
       color: var(--white);
-
-      
     }
     a {
       display: inline-block;
       padding: 1rem 2rem;
-      font-size: 2rem ;
+      font-size: 2rem;
       color: var(--white);
-      &:focus{
+      &:focus {
         border-radius: 12px;
         box-shadow: 0 0 0 4px #000, 0 0 0 8px #fff !important;
-        outline:none;
+        outline: none;
       }
- 
-    }
- 
-    }
-    .active {
-      color: var(--white);
-    }
-    .resume-btn{
-      position: absolute;
-      top: 20px;
-      right: 16px;
-      display: inline-block;
-      outline: solid 2px white;
-      cursor: pointer;
-      font-family: "RobotoMono Regular";
-      padding: 0.7rem 1.2rem;
-      font-size: 1.7rem !important;
-      color: var(--grey-1);
-    }
-    .mobile-menu-icon {
-      position: absolute;
-      right: 1em;
-      top: 1em;
-      width:4em;
-      cursor: pointer;
-      display: none;
-      outline: none;
-    }
-
-    .closeNavIcon {
-      display: none;
-    }
-    @media only screen and (max-width:900px){
-      padding:0;
-      .hide-item{
- 
-        transform: translateY(calc(-100% - var(--top)));
-      }
-      
-      .mobile-menu-icon{
-        display:block;
-      }
-      .navItems {
-       
-        --top: 1rem;
-        transition: 0.5s ease transform;
-        background-color:var(--deep-dark);
-        padding: 2rem;
-        padding-bottom: 5em;
-        width:90%;
-        max-width: 300px;
-        border-radius: 12px;
-        position:absolute;
-        right:1em;
-        top: var(--top);
-        .closeNavIcon{
-          display:block;
-          width: 3rem;
-          margin: 0 0 0 auto;
-          cursor: pointer;
-          *{
-            pointer-events: none;
-          }
-        }
-         li{
-          display: block;
-          margin-bottom:1rem;
-        }
-        .resume-btn{
-          position: static;
-          margin-top: 3rem;
-        }
-      }
-
-  
     }
   }
+  .active {
+    color: var(--white);
+  }
+  .resume-btn {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    display: inline-block;
+    outline: solid 2px white;
+    cursor: pointer;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.7rem !important;
+    color: var(--grey-1);
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 4em;
+    cursor: pointer;
+    display: none;
+    outline: none;
+  }
 
+  .closeNavIcon {
+    display: none;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 0;
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
+
+    .mobile-menu-icon {
+      display: block;
+    }
+    .navItems {
+      --top: 1rem;
+      transition: 0.5s ease transform;
+      background-color: var(--deep-dark);
+      padding: 2rem;
+      padding-bottom: 5em;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1em;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+      .resume-btn {
+        position: static;
+        margin-top: 3rem;
+      }
+    }
+  }
 `;
 
 const Header = () => {

@@ -14,19 +14,17 @@ const StyledSection = styled.section`
   height: 100vh;
   h1 {
     color: #fff;
-    font-size: 96px;
-    font-weight: 700;
+
+    font-weight: 900;
     letter-spacing: -1px;
     line-height: 1;
     margin-top: 320px;
-    max-width: 850px;
+    max-width: 100%;
     text-align: center;
-  }
-  .big-text {
-    font-size: 150px !important;
   }
 
   .big-text {
+    font-size: 150px !important;
     background-image: url("https://i.stack.imgur.com/kUbWj.jpg") !important;
     opacity: 0;
     -webkit-background-clip: text;
@@ -37,10 +35,29 @@ const StyledSection = styled.section`
       fly-in 2s linear 1;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    font-family: "Articulat Extra Bold";
+    margin-top: 40px;
   }
 
   .first-line {
     animation: fly-in 1s linear 1;
+    font-size: 60px;
+    font-family: "Articulat Extra Bold";
+  }
+
+  .buttons {
+    display: flex;
+    max-width: 500px;
+    column-gap: 50px;
+    margin-top: 70px;
+
+    a {
+      padding: 10px 20px;
+      width: 400px;
+      border: solid 2px #fff;
+      border-radius: 20px;
+      text-align: center;
+    }
   }
 
   .arrows {
@@ -121,13 +138,14 @@ const Hero = () => {
   return (
     <StyledSection>
       <h1>
-        <span className="first-line">Hello there,</span>
+        <span className="first-line">Hi, my name is</span>
         <br />
-        <span className="big-text">
-          I'm <span>Zayn</span>
-        </span>
+        <span className="big-text">Zayn Chowdhury</span>
       </h1>
-
+      <div className="buttons">
+        <a href="/">Download Resume</a>
+        <a href="/">Get in touch</a>
+      </div>
       <div className="arrows"></div>
     </StyledSection>
   );

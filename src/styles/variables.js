@@ -8,6 +8,8 @@ const variables = css`
     --gray-2: #363636;
     --white: white;
     --black: black;
+    --gradient: linear-gradient(to bottom right, red, yellow);
+    --font-sm: 1.75em;
   }
 `;
 
