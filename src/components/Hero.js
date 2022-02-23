@@ -21,7 +21,6 @@ const StyledSection = styled.section`
     margin-top: 320px;
     max-width: 850px;
     text-align: center;
-    z-index: 1;
   }
   .big-text {
     font-size: 150px !important;
@@ -128,9 +127,7 @@ const Hero = () => {
           I'm <span>Zayn</span>
         </span>
       </h1>
-      <div>
-        <canvas></canvas>
-      </div>
+
       <div className="arrows"></div>
     </StyledSection>
   );

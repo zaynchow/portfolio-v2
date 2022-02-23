@@ -21,7 +21,7 @@ const NavMenuStyles = styled.nav`
   width:100%;
   max-width: 1532px;
   position: absolute;
-  z-index: 100;
+
   padding: 1rem 4rem;
   background: var(--dark-bg);
   display: flex;

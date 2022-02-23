@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Header, Hero, SidebarLeft } from "./components";
+import { Header, Hero, SidebarLeft, SidebarRight } from "./components";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <Router>
         <SidebarLeft />
+        <SidebarRight />
         <Header />
         <Hero />
       </Router>

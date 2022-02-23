@@ -32,7 +32,7 @@ const SidebarLeft = () => {
       <ul>
         <li>
           <a
-            href="https://github.com/bchiang7"
+            href="https://github.com/zaynchow"
             aria-label="GitHub"
             target="_blank"
             rel="noreferrer"
@@ -55,7 +55,7 @@ const SidebarLeft = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/bchiang7"
+            href="https://www.instagram.com/zaynchowdhury"
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
@@ -80,7 +80,7 @@ const SidebarLeft = () => {
         </li>
         <li>
           <a
-            href="https://twitter.com/bchiang7"
+            href="https://twitter.com/"
             aria-label="Twitter"
             target="_blank"
             rel="noreferrer"
@@ -103,7 +103,7 @@ const SidebarLeft = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/bchiang7"
+            href="https://www.linkedin.com/in/zayn-chowdhury-343a86201"
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"
