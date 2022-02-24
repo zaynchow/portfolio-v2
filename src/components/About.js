@@ -2,22 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import me from "../assets/images/me.jpg";
 
+
 const StyledSection = styled.section`
-  margin-top: 20vh;
+  margin-top: 10vh;
   height: 100vh;
   width: 100%;
-  max-width: 1532px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 90vw;
+  position: relative;
+  margin: 0 auto;
   padding: 1rem 15rem;
-  h2 {
-    color: #aee8fa;
+  .heading {
+    h2 {
+      color: #aee8fa;
+      flex-shrink: 0;
+    }
+
     position: relative;
 
     display: flex;
+    column-gap: 70px;
     justify-content: space-between;
-    font-size: 60px;
+
     align-items: center;
     &:after {
       content: "";
@@ -25,7 +30,7 @@ const StyledSection = styled.section`
       box-sizing: border-box;
       display: inline-block;
       height: 1px;
-      width: 77%;
+      width: 100%;
     }
   }
   section {
@@ -84,8 +89,9 @@ const StyledSection = styled.section`
 const About = () => {
   return (
     <StyledSection>
-      <h2>About Me</h2>
-
+      <div className="heading">
+        <h2>About Me</h2>
+      </div>
       <section>
         <div className="text">
           <p>
@@ -103,12 +109,6 @@ const About = () => {
             harum! Vero rem quod debitis eius eum harum inventore repudiandae
             neque a vel, cum ipsa consequuntur. Nam et tenetur odio neque.
             <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            soluta sapiente dolorem, necessitatibus dolorum beatae itaque
-            corrupti eveniet cum rerum perferendis eius, doloremque sunt culpa
-            quas laudantium quaerat qui ipsam! Minus, quam voluptates quaerat
-            nostru
           </p>
           <ul>
             <li>React.js</li>
