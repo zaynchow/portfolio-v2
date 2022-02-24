@@ -6,6 +6,8 @@ import {
   SidebarLeft,
   SidebarRight,
   Projects,
+  Contact,
+  Footer,
 } from "../components";
 
 const StyledSection = styled.div`
@@ -13,14 +15,17 @@ const StyledSection = styled.div`
 `;
 
 const Home = () => {
+  document.body.style = "background: black";
   return (
     <StyledSection>
-      <Header />
+      <Header color="dark" />
       <Hero />
       <About />
       <SidebarRight />
       <SidebarLeft />
       <Projects />
+      <Contact />
+      <Footer />
     </StyledSection>
   );
 };

@@ -13,8 +13,8 @@ ${variables};
   
   html{
     font-size: 10px;
-    font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    font-family: 'Articulat Regular';
+    
   }
   ul,li{
     list-style: none;

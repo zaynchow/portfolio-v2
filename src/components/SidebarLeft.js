@@ -21,7 +21,10 @@ const StyledSidebar = styled.article`
       width: 1px;
       height: 110px;
       margin: 0px auto;
-      background-color: var(--white);
+      background-color: var(--gray-1);
+    }
+    li a {
+      color: var(--gray-1);
     }
   }
 `;

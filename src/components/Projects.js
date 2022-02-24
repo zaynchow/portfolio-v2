@@ -5,7 +5,7 @@ import SingleProject from "./SingleProject";
 const StyledSection = styled.section`
   min-height: 100vh;
   position: relative;
-  padding: 128px 20px;
+  padding: 60px 20px;
 
   h2 {
     margin-bottom: 50px;
@@ -37,9 +37,8 @@ const Projects = () => {
         <SingleProject width="48" color="#AEE8FA" />
         <SingleProject width="100" color="#f9f9f9" />
         <SingleProject width="48" color="#FFD6BA" />
-        <SingleProject width="48" color="#555B6E" />
+
         <SingleProject width="48" color="#FFC6D9" />
-        <SingleProject width="48" color="#fbe9d7" />
       </section>
     </StyledSection>
   );

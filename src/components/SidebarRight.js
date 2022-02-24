@@ -12,6 +12,8 @@ const StyledSidebar = styled.article`
     cursor: pointer;
     font-size: 20px;
     display: inline-block;
+
+    color: var(--gray-1);
   }
 
   display: flex;
@@ -25,7 +27,7 @@ const StyledSidebar = styled.article`
     width: 1px;
     height: 110px;
     margin: 0px auto;
-    background-color: var(--white);
+    background-color: var(--gray-1);
   }
 `;
 

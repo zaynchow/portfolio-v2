@@ -13,7 +13,7 @@ const StyledSection = styled.section`
   position: relative;
   height: 100vh;
   h1 {
-    color: #fff;
+    color: var(--white);
 
     font-weight: 900;
     letter-spacing: -1px;
@@ -25,11 +25,20 @@ const StyledSection = styled.section`
 
   .big-text {
     font-size: 8em !important;
-    background-image: url("https://i.stack.imgur.com/kUbWj.jpg") !important;
+    /* background-image: url("https://i.stack.imgur.com/kUbWj.jpg") !important; */
+    background: linear-gradient(
+      90deg,
+      #d66761 16.66666%,
+      #f5c0b2 33.33333%,
+      #aee8fa 50%,
+      #68bde7 66.66666%,
+      #6bd490 83.33333%,
+      #a2f6cf
+    );
     opacity: 0;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 200%;
+    background-size: 150%;
     -webkit-text-fill-color: transparent;
     animation: gradient-animation 10s ease-in-out infinite alternate,
       fly-in 2s linear 1;
@@ -58,6 +67,7 @@ const StyledSection = styled.section`
       border: solid 2px #fff;
       border-radius: 20px;
       text-align: center;
+      color: var(--white);
     }
   }
 

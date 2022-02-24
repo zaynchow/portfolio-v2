@@ -3,7 +3,8 @@ import { css } from "styled-components";
 const variables = css`
   :root {
     --dark-bg: #000;
-    --gray-1: #bcb4b4;
+    /* --gray-1:#bcb4b4 ; */
+    --gray-1: #d0c8c8;
     --deep-dark: #000;
     --gray-2: #363636;
     --white: white;

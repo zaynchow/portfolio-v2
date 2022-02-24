@@ -13,7 +13,7 @@ const StyledSection = styled.section`
   padding: 1rem 15rem;
   .heading {
     h2 {
-      color: #aee8fa;
+      color: var(--white);
       flex-shrink: 0;
     }
 
@@ -34,6 +34,7 @@ const StyledSection = styled.section`
     }
   }
   section {
+    color: var(--gray-1);
     padding-top: 40px;
     display: grid !important;
     grid-template-columns: 3fr 2fr;
