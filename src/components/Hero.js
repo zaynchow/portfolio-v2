@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const size = 50;
+const size = 25;
 const speed = 3;
 const peakopacity = 0.7;
 
@@ -19,12 +19,12 @@ const StyledSection = styled.section`
     letter-spacing: -1px;
     line-height: 1;
     margin-top: 320px;
-    max-width: 100%;
+    max-width: 80%;
     text-align: center;
   }
 
   .big-text {
-    font-size: 150px !important;
+    font-size: 8em !important;
     background-image: url("https://i.stack.imgur.com/kUbWj.jpg") !important;
     opacity: 0;
     -webkit-background-clip: text;
@@ -36,12 +36,13 @@ const StyledSection = styled.section`
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     font-family: "Articulat Extra Bold";
-    margin-top: 40px;
+    display: inline-block;
+    margin-top: 1rem;
   }
 
   .first-line {
     animation: fly-in 1s linear 1;
-    font-size: 60px;
+    font-size: 4rem;
     font-family: "Articulat Extra Bold";
   }
 
@@ -49,7 +50,7 @@ const StyledSection = styled.section`
     display: flex;
     max-width: 500px;
     column-gap: 50px;
-    margin-top: 70px;
+    margin-top: 30px;
 
     a {
       padding: 10px 20px;
@@ -138,7 +139,7 @@ const Hero = () => {
   return (
     <StyledSection>
       <h1>
-        <span className="first-line">Hi, my name is</span>
+        <span className="first-line">Hello, my name is</span>
         <br />
         <span className="big-text">Zayn Chowdhury</span>
       </h1>

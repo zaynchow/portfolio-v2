@@ -18,7 +18,7 @@ const NavMenuStyles = styled.nav`
   top: 84px;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1532px;
+  max-width: 85vw;
   position: absolute;
 
   padding: 1rem 4rem;
@@ -35,6 +35,7 @@ const NavMenuStyles = styled.nav`
     margin-top: 0;
     min-width: 30%;
     text-align: center;
+    flex-shrink: 0;
 
     li {
       display: inline-block;

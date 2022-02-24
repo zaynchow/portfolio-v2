@@ -9,6 +9,8 @@ ${variables};
     margin: 0;
     box-sizing: border-box;
   }
+
+  
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
@@ -33,6 +35,7 @@ ${variables};
     width: 90%;
     margin: 0 auto;
   }
+  
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;

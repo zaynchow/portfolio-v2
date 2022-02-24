@@ -9,7 +9,11 @@ const variables = css`
     --white: white;
     --black: black;
     --gradient: linear-gradient(to bottom right, red, yellow);
-    --font-sm: 1.75em;
+    --font-xsm: 1.5rem;
+    --font-sm: 1.75rem;
+    --font-bg: 3rem;
+    --font-m: 2rem;
+    --font-h2: 4.5;
   }
 `;
 
