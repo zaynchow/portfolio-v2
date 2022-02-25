@@ -6,3 +6,8 @@ export { default as Projects } from "./Projects";
 export { default as About } from "./About";
 export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";
+export { default as InfoColumn } from "./InfoColumn";
+export { default as ResumeSectionTitle } from "./ResumeSectionTitle";
+export { default as ResumeProjectRow } from "./ResumeProjectRow";
+
+

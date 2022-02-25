@@ -12,6 +12,9 @@ import {
 
 const StyledSection = styled.div`
   position: relative;
+  h2 {
+    font-size: 4.5rem;
+  }
 `;
 
 const Home = () => {

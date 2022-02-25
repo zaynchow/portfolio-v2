@@ -90,7 +90,7 @@ const StyledSection = styled.section`
 const About = () => {
   return (
     <StyledSection>
-      <div className="heading">
+      <div className="heading" id="about-start">
         <h2>About Me</h2>
       </div>
       <section>

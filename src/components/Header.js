@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import { MdMenu, MdClose } from "react-icons/md";
 import { useState } from "react";
@@ -22,7 +22,7 @@ const NavMenuStyles = styled.nav`
   position: absolute;
 
   padding: 1rem 4rem;
-  background: ${(props) => (props.color == "dark" ? "black" : "white")};
+  background: ${(props) => (props.color == "dark" ? "black" : "#f9f9f9")};
   display: flex;
   justify-content: space-between;
   column-gap: 80px;
@@ -126,6 +126,8 @@ const NavMenuStyles = styled.nav`
 
 const Header = ({ color }) => {
   const [showNav, setShowNav] = useState(false);
+  const anchor = document.querySelector("#projects-start");
+
   return (
     <NavMenuStyles color={color}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 56">
@@ -167,14 +169,23 @@ const Header = ({ color }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects" onClick={() => setShowNav(false)}>
+          <NavLink
+            to="/#projects-start"
+            onClick={() => {
+              setShowNav(false);
+              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
+          >
             Projects
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" onClick={() => setShowNav(false)}>
+          <a
+            href="mailto:zaynchowdhury763@gmail.com"
+            onClick={() => setShowNav(false)}
+          >
             Contact
-          </NavLink>
+          </a>
         </li>
       </ul>
     </NavMenuStyles>

@@ -45,7 +45,7 @@ const Typography = createGlobalStyle`
 
   h2{
     font-family:  'Articulat Bold';
-    font-size: 4.5rem;
+    
   }
 
   p,span,li,a{
