@@ -14,6 +14,10 @@ ${variables};
   html{
     font-size: 10px;
     font-family: 'Articulat Regular';
+    @media (max-width:799px){
+
+padding: 0px 50px;
+}
     
   }
   ul,li{
@@ -51,5 +55,6 @@ ${variables};
       }
     }
   }
+
 `;
 export default GlobalStyles;

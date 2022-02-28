@@ -42,7 +42,7 @@ const StyledSection = styled.section`
     margin-bottom: 8px;
     margin-right: 8px;
     font-family: "Articulat Medium";
-    outline: dashed 5px pink;
+    border: dashed 5px black;
   }
 `;
 
@@ -53,7 +53,7 @@ const Contact = () => {
         and I'd love to
         <br /> work with you
       </h1>
-      <a href="/">Contact Me</a>
+      <a href="mailto:zaynchowdhury763@gmail.com">Contact Me</a>
     </StyledSection>
   );
 };

@@ -4,13 +4,12 @@ import me from "../assets/images/me.jpg";
 
 
 const StyledSection = styled.section`
-  margin-top: 10vh;
   height: 100vh;
   width: 100%;
   max-width: 90vw;
   position: relative;
   margin: 0 auto;
-  padding: 1rem 15rem;
+
   .heading {
     h2 {
       color: var(--white);
@@ -36,7 +35,7 @@ const StyledSection = styled.section`
   section {
     color: var(--gray-1);
     padding-top: 40px;
-    display: grid !important;
+    display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
     .text {
@@ -85,6 +84,17 @@ const StyledSection = styled.section`
       }
     }
   }
+
+  @media (max-width: 799px) {
+    section {
+      display: block;
+      max-width: 100% !important;
+      padding-left: 0;
+    }
+  }
+  @media (min-width: 799px) {
+    padding: 1rem 15rem;
+  }
 `;
 
 const About = () => {
@@ -96,26 +106,33 @@ const About = () => {
       <section>
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
-            odit corrupti excepturi, magni aliquid architecto mollitia expedita
-            obcaecati rerum voluptatibus debitis ex ab tenetur dolores suscipit
-            quas aperiam laboriosam. Exercitationem pariatur ipsum repellendus
-            unde nihil minima dolore repellat doloremque atque in placeat
-            suscipit eum laboriosam alias animi nam voluptate, beatae magni
-            aspernatur molestias amet. Eos autem velit praesentium
-            necessitatibus?
+            Hello! My name is Zayn and I enjoy creating things that live on the
+            internet. My interest in web development started back in 2012 when I
+            decided to try editing custom Tumblr themes — turns out hacking
+            together a custom reblog button taught me a lot about HTML & CSS!
             <br />
             <br />
-            Ducimus reiciendis neque ab voluptatem pariatur impedit nisi nulla
-            harum! Vero rem quod debitis eius eum harum inventore repudiandae
-            neque a vel, cum ipsa consequuntur. Nam et tenetur odio neque.
+            Fast-forward to today, and I’ve had the privilege of working at an
+            advertising agency, a start-up, a huge corporation, and a
+            student-led design studio. My main focus these days is building
+            accessible, inclusive products and digital experiences at
+            Upstatement for a variety of clients.
+            <br />
+            <br />I also recently launched a course that covers everything you
+            need to build a web app with the Spotify API using Node & React.
+            JavaScript (ES6+) TypeScript React Eleventy Node.js WordPress
+            <br />
+            <br />
+            Here are a few technologies I’ve been working with recently:
             <br />
           </p>
           <ul>
-            <li>React.js</li>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Java</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>ExpressJS</li>
+            <li>WordPress</li>
           </ul>
         </div>
         <div id="image">

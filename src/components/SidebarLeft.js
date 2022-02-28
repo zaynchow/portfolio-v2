@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSidebar = styled.article`
+  animation: fly-in 0.75s linear 1 forwards;
+  animation-delay: 2s;
+  opacity: 0;
   position: fixed;
   bottom: 0px;
   left: 40px;
@@ -26,6 +29,9 @@ const StyledSidebar = styled.article`
     li a {
       color: var(--gray-1);
     }
+  }
+  @media (max-width: 799px) {
+    visibility: hidden;
   }
 `;
 

@@ -89,6 +89,17 @@ const StyledMain = styled.main`
       padding-bottom: 10vh;
     }
   }
+  @media (max-width: 799px) {
+    margin-bottom: 84px;
+    margin-top: 108px;
+    padding: 0 20px;
+    .resume-intro {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+    }
+  }
 `;
 
 const Resume = () => {
@@ -152,6 +163,7 @@ const Resume = () => {
           ))}
         </div>
       </section>
+      <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_nzuitqg1.json"></lottie-player>
       <Footer />
     </StyledMain>
   );

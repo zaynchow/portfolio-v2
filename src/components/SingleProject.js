@@ -69,20 +69,25 @@ const StyledSection = styled.article`
   }
 `;
 
-const SingleProject = ({ color, width, technologies }) => {
+const SingleProject = ({
+  title,
+  year,
+  color,
+  width,
+  technologies,
+  children,
+  live,
+  git,
+}) => {
   return (
     <StyledSection color={color} width={width}>
       <div className="project-title">
-        <h3>CommerceCart</h3>
+        <h3>{title}</h3>
         <figure></figure>
       </div>
-      <span>2021</span>
+      <span>{year}</span>
       <hr />
-      <p className="project-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut
-        expedita consequuntur illum repellat. Qui officia ex ut, quod odio
-        molestias tempora. Repellendus.
-      </p>
+      <p className="project-text">{children}</p>
       <ul>
         {technologies.map((technology) => (
           <li>{technology}</li>
@@ -90,8 +95,20 @@ const SingleProject = ({ color, width, technologies }) => {
       </ul>
 
       <div>
-        <a href="/">Live Preview</a>
-        <a href="/">View on Github</a>
+        {live ? (
+          <a href={live} target="_blank">
+            Live Preview
+          </a>
+        ) : (
+          ""
+        )}
+        {git ? (
+          <a href={git} target="_blank">
+            View on Github
+          </a>
+        ) : (
+          ""
+        )}
       </div>
     </StyledSection>
   );
