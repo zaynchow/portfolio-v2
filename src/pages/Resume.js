@@ -17,7 +17,7 @@ const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   font-family: "Articulat Regular";
-  margin-bottom: 192px;
+  /* margin-bottom: 192px; */
 
   margin: 0 auto;
   margin-top: 240px;
@@ -90,13 +90,26 @@ const StyledMain = styled.main`
     }
   }
   @media (max-width: 799px) {
-    margin-bottom: 84px;
     margin-top: 108px;
     padding: 0 20px;
     .resume-intro {
       h1 {
         font-size: 36px;
         margin-bottom: 8px;
+      }
+    }
+    .resume--skills .skill-groups {
+      flex-direction: column;
+      padding-top: 0px;
+    }
+    .resume--education {
+      .education-columns {
+        flex-direction: column;
+        .education-columns--item {
+          h3 {
+            white-space: nowrap;
+          }
+        }
       }
     }
   }
@@ -129,7 +142,7 @@ const Resume = () => {
         <div className="education-columns">
           <div className="education-columns--item">
             <h3>
-              University of British <br />
+              University of British {window.screen.width > 799 && <br />}
               Columbia
             </h3>
             <span>2020 – Present</span>

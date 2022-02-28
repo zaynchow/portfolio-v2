@@ -67,6 +67,9 @@ const StyledSection = styled.article`
       font-family: "SFMono Regular";
     }
   }
+  @media (max-width: 799px) {
+    width: calc(100%);
+  }
 `;
 
 const SingleProject = ({

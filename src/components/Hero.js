@@ -152,16 +152,22 @@ const StyledSection = styled.section`
 
   @media (max-width: 799px) {
     min-height: 100vh;
+    h1 {
+      margin-top: calc(35vh);
+    }
 
     .first-line {
-      font-size: 7vw;
+      font-size: 5vw;
       letter-spacing: -1px;
-      margin-top: calc(50vh - 1.5em);
     }
     .big-text {
-      font-size: 9vw;
+      font-size: 12vw;
       letter-spacing: -1px;
     }
+    .buttons {
+    column-gap: 20px;
+    max-width: 75%;
+
   }
 `;
 

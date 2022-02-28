@@ -22,6 +22,18 @@ const StyledSection = styled.section`
     width: 100%;
     margin: 0 auto;
   }
+
+  @media (max-width: 799px) {
+    display: inline-block;
+    margin-top: 80%;
+    h2 {
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+    .projects {
+      flex-direction: column;
+    }
+  }
 `;
 
 const Projects = () => {
@@ -64,13 +76,6 @@ const Projects = () => {
           Commerce Cart is a full-fledged, user-friendly e-commerce store with
           an admin dashboard for consumer analytics.
         </SingleProject>
-        {/* <SingleProject
-          title="Spotify Analytics App"
-          width="48"
-          color="#FFD6BA"
-        ></SingleProject>
-
-        <SingleProject width="48" color="#FFC6D9" /> */}
       </section>
     </StyledSection>
   );

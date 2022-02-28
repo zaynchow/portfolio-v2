@@ -31,7 +31,7 @@ const StyledSection = styled.section`
       fly-in 2s linear 1;
   }
   a {
-    background-color: #fff;
+    /* background-color: #fff;
     color: #000;
     border-radius: 12px;
     padding: 1rem 2.5rem;
@@ -42,7 +42,20 @@ const StyledSection = styled.section`
     margin-bottom: 8px;
     margin-right: 8px;
     font-family: "Articulat Medium";
-    border: dashed 5px black;
+    border: dashed 5px black; */
+    padding: 10px 20px;
+    min-width: 250px;
+    max-width: 30vw;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--white);
+  }
+  @media (max-width: 799px) {
+    h1 {
+      font-size: 12vw;
+      letter-spacing: -1px;
+    }
   }
 `;
 

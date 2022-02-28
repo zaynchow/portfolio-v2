@@ -28,6 +28,8 @@ const StyledSection = styled.section`
   small {
     padding: 10px 0;
   }
+  @media (max-width: 799px) {
+  }
 `;
 
 const Footer = () => {

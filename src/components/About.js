@@ -86,10 +86,24 @@ const StyledSection = styled.section`
   }
 
   @media (max-width: 799px) {
+    .heading {
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
     section {
       display: block;
       max-width: 100% !important;
-      padding-left: 0;
+      padding: 0;
+      .text {
+        margin: 0;
+      }
+      #image {
+        position: relative;
+
+        margin: 50px auto 0px;
+        width: 70%;
+      }
     }
   }
   @media (min-width: 799px) {

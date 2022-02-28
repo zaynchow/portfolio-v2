@@ -25,6 +25,20 @@ const StyledSection = styled.div`
     font-size: 1.6rem;
     line-height: 2;
   }
+  @media (max-width: 799px) {
+    flex-direction: column;
+    .work-rows--title {
+      h3,
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    .work-rows--description {
+      width: 100%;
+      margin-top: 1.6rem;
+    }
+  }
 `;
 
 const ResumeProjectRow = ({ title, desc, year }) => {
