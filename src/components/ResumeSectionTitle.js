@@ -9,6 +9,11 @@ const StyledSection = styled.div`
     margin-bottom: 24px;
     text-transform: uppercase;
   }
+  @media (max-width: 799px) {
+    h2 {
+      margin-bottom: 18px;
+    }
+  }
 `;
 const ResumeSectionTitle = (props) => {
   return (
