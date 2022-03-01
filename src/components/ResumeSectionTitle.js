@@ -18,6 +18,7 @@ const StyledSection = styled.div`
 const ResumeSectionTitle = (props) => {
   return (
     <StyledSection>
+      
       <h2>{props.children}</h2>
     </StyledSection>
   );
