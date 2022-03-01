@@ -1,5 +1,4 @@
 {
-  // "homepage": "https://zaynchow.github.io/portfolio-v2",
   "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
   "name": "portfolio-v2",
   "version": "0.1.0",
