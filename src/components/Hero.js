@@ -165,9 +165,32 @@ const StyledSection = styled.section`
       letter-spacing: -1px;
     }
     .buttons {
-    column-gap: 20px;
-    max-width: 75%;
+      column-gap: 20px;
+      max-width: 75%;
+    }
+  }
+  @media (max-width: 575.98px) {
+    h1 {
+      padding: 0;
+      max-width: initial;
+    }
+    .big-text {
+      font-size: 14vw;
+    }
+    .buttons {
+      column-gap: 20px;
 
+      row-gap: 20px;
+      flex-direction: column;
+      max-width: inherit;
+      a {
+        max-width: 40%;
+        margin: 0 auto;
+
+        font-size: 1.3rem;
+        padding: 5px 5px;
+      }
+    }
   }
 `;
 
@@ -180,8 +203,10 @@ const Hero = () => {
         <span className="big-text">Zayn Chowdhury</span>
       </h1>
       <div className="buttons">
-        <a href="/">Download Resume</a>
-        <a href="/">Get in touch</a>
+        <a href="/zayn-resume.pdf" download="Zayn's Resume">
+          Download Resume
+        </a>
+        <a href="mailto:zaynchow@student.ubc.ca">Get in touch</a>
       </div>
       <div className="arrows"></div>
     </StyledSection>

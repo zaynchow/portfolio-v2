@@ -28,15 +28,20 @@ const StyledSection = styled.div`
   @media (max-width: 799px) {
     flex-direction: column;
     .work-rows--title {
-      h3,
-      span {
-        white-space: nowrap;
-      }
+      width: 100%;
+      display: block;
     }
 
     .work-rows--description {
       width: 100%;
       margin-top: 1.6rem;
+    }
+  }
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    .work-rows--title {
+      width: 100%;
+      display: block;
     }
   }
 `;
@@ -46,7 +51,7 @@ const ResumeProjectRow = ({ title, desc, year }) => {
     <StyledSection>
       <div className="work-rows--title">
         <h3>{title}</h3>
-        <span>{year}</span>{" "}
+        <span>{year}</span>
       </div>
       <div className="work-rows--description">
         <p>{desc}</p>

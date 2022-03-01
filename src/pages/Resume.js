@@ -113,6 +113,18 @@ const StyledMain = styled.main`
       }
     }
   }
+  @media (max-width: 575.98px) {
+    margin: 0 0;
+    max-width: 100%;
+    margin-top: 150px;
+    padding: 0 0px;
+    .resume-intro {
+      h1 {
+        line-height: 1;
+        white-space: pre-wrap;
+      }
+    }
+  }
 `;
 
 const Resume = () => {
@@ -142,7 +154,9 @@ const Resume = () => {
         <div className="education-columns">
           <div className="education-columns--item">
             <h3>
-              University of British {window.screen.width > 799 && <br />}
+              University of British
+              {window.screen.width > 799 ||
+                (window.screen.width < 575 && <br />)}
               Columbia
             </h3>
             <span>2020 – Present</span>

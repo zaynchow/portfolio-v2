@@ -11,6 +11,7 @@ import {
 } from "../components";
 
 const StyledSection = styled.div`
+  max-width: 100%;
   position: relative;
   h2 {
     font-size: 4.5rem;

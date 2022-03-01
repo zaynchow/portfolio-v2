@@ -31,18 +31,6 @@ const StyledSection = styled.section`
       fly-in 2s linear 1;
   }
   a {
-    /* background-color: #fff;
-    color: #000;
-    border-radius: 12px;
-    padding: 1rem 2.5rem;
-    font-size: 16px;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 14px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-    font-family: "Articulat Medium";
-    border: dashed 5px black; */
     padding: 10px 20px;
     min-width: 250px;
     max-width: 30vw;
@@ -55,6 +43,20 @@ const StyledSection = styled.section`
     h1 {
       font-size: 12vw;
       letter-spacing: -1px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    h1 {
+      font-size: 10vw;
+    }
+    a {
+      max-width: initial;
+      margin: 0 auto;
+      min-width: initial;
+      font-size: 1.5rem;
+      padding: 10px 30px;
+      white-space: nowrap;
+      text-align: center;
     }
   }
 `;

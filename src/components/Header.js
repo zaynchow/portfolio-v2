@@ -71,7 +71,7 @@ const NavMenuStyles = styled.nav`
       border-radius: 16px;
       height: 100px;
       margin-right: 32px;
-      width: 800px;
+      width: 90px;
     }
     .line {
       visibility: hidden;
@@ -100,7 +100,7 @@ const NavMenuStyles = styled.nav`
 
       top: 0px;
       right: -7px;
-      /* width: 90%; */
+
       max-width: 300px;
       border-radius: 12px;
       position: absolute;
@@ -162,6 +162,12 @@ const NavMenuStyles = styled.nav`
       /* transform: rotate(45deg) translate(-0.6rem, -0.8rem); */
       background-color: ${(props) =>
         props.color === "dark" ? "black" : "#fff"};
+    }
+  }
+  @media (max-width: 575.98px) {
+    .navItems {
+      top: 20px;
+      right: -10px;
     }
   }
 `;

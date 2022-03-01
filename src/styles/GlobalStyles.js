@@ -8,17 +8,39 @@ ${variables};
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
+    
   }
 
   
   html{
     font-size: 10px;
     font-family: 'Articulat Regular';
+    max-width:100%;
+    overflow-x:hidden;
+    
+
+   
+
+
+
     @media (max-width:799px){
 
 padding: 0px 50px;
 }
+@media (max-width:575.98px){
+
+padding: 0px 20px;
+}
     
+  }
+  body{
+    max-width:100%;
+    overflow-x:hidden;
+
+  
+    
+
   }
   ul,li{
     list-style: none;

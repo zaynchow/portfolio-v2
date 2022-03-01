@@ -24,9 +24,8 @@ const StyledSection = styled.section`
   }
 
   @media (max-width: 799px) {
-    display: inline-block;
-    margin-top: 80%;
-    h2 {
+    margin-top: 35%;
+    .projects-start h2 {
       font-size: 3.5rem;
       line-height: 1;
     }
@@ -34,12 +33,19 @@ const StyledSection = styled.section`
       flex-direction: column;
     }
   }
+  @media (max-width: 575.98px) {
+    padding: 0;
+    .title {
+      font-size: 8vw;
+      line-height: 1;
+    }
+  }
 `;
 
 const Projects = () => {
   return (
     <StyledSection id="projects-start">
-      <h2>Recent work and experiments</h2>
+      <h2 className="title">Recent work and experiments</h2>
       <section className="projects">
         <SingleProject
           width="48"

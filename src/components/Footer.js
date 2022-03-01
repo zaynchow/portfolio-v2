@@ -28,7 +28,13 @@ const StyledSection = styled.section`
   small {
     padding: 10px 0;
   }
-  @media (max-width: 799px) {
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+    small {
+      font-size: 80%;
+      white-space: nowrap;
+    }
   }
 `;
 

@@ -4,9 +4,8 @@ import me from "../assets/images/me.jpg";
 
 
 const StyledSection = styled.section`
-  height: 100vh;
   width: 100%;
-  max-width: 90vw;
+  max-width: 80vw;
   position: relative;
   margin: 0 auto;
 
@@ -64,7 +63,8 @@ const StyledSection = styled.section`
       .picture {
         width: 400px;
         height: 400px;
-        position: absolute;
+        position: relative;
+        /* position: absolute; */
         img {
           border-radius: 22px;
         }
@@ -100,14 +100,24 @@ const StyledSection = styled.section`
       }
       #image {
         position: relative;
-
+        display: inline-block;
         margin: 50px auto 0px;
         width: 70%;
       }
     }
   }
-  @media (min-width: 799px) {
-    padding: 1rem 15rem;
+  @media (max-width: 575.98px) {
+    #image {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  section #image .picture:after {
+    top: 10px;
+    left: 10px;
+
+    width: 80%;
   }
 `;
 
