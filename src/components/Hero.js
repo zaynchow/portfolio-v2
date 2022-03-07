@@ -40,8 +40,8 @@ const StyledSection = styled.section`
     background-clip: text;
     background-size: 150%;
     -webkit-text-fill-color: transparent;
-    animation: gradient-animation 10s ease-in-out infinite alternate,
-      fly-in 2s linear 1;
+    animation: gradient-animation 6s ease-in-out infinite alternate,
+      fly-in 1s linear 1;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     font-family: "Articulat Extra Bold";
@@ -50,7 +50,7 @@ const StyledSection = styled.section`
   }
 
   .first-line {
-    animation: fly-in 1s linear 1;
+    animation: fly-in 0.5s linear 1;
     font-size: 4rem;
     font-family: "Articulat Extra Bold";
   }
@@ -62,7 +62,7 @@ const StyledSection = styled.section`
     column-gap: 50px;
     margin-top: 30px;
     animation: fly-in 0.75s linear 1 forwards;
-    animation-delay: 2s;
+    animation-delay: 1.3s;
 
     a {
       padding: 10px 20px;
@@ -78,7 +78,7 @@ const StyledSection = styled.section`
     position: absolute;
     top: 90vh;
     animation: fly-in 0.75s linear 1 forwards;
-    animation-delay: 2s;
+    animation-delay: 1.3s;
     opacity: 0;
 
     width: ${size}px;
@@ -203,7 +203,10 @@ const Hero = () => {
         <span className="big-text">Zayn Chowdhury</span>
       </h1>
       <div className="buttons">
-        <a href="/zayn-resume.pdf" download="Zayn's Resume">
+        <a
+          href="/Resume - Chowdhury Zayn Ud-Din Shams.pdf"
+          download="Zayn's Resume"
+        >
           Download Resume
         </a>
         <a href="mailto:zaynchow@student.ubc.ca">Get in touch</a>

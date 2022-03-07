@@ -59,28 +59,27 @@ const StyledSection = styled.section`
         }
       }
     }
-    #image {
-      .picture {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        /* position: absolute; */
-        img {
-          border-radius: 22px;
-        }
+  }
+  #image {
+    .picture {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      img {
+        border-radius: 22px;
+      }
 
-        &:after {
-          border: 2px solid #aee8fa;
-          top: 20px;
-          left: 20px;
-          z-index: -1;
-          content: "";
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border-radius: 12px;
-        }
+      &:after {
+        border: 2px solid #aee8fa;
+        top: 15px;
+        left: 20px;
+        z-index: -1;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
       }
     }
   }
@@ -112,12 +111,13 @@ const StyledSection = styled.section`
         width: 80%;
       }
     }
-  }
-  section #image .picture:after {
-    top: 10px;
-    left: 10px;
 
-    width: 80%;
+    section #image .picture:after {
+      top: 10px;
+      left: 10px;
+
+      width: 80%;
+    }
   }
 `;
 
@@ -130,21 +130,30 @@ const About = () => {
       <section>
         <div className="text">
           <p>
-            Hello! My name is Zayn and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2012 when I
-            decided to try editing custom Tumblr themes — turns out hacking
-            together a custom reblog button taught me a lot about HTML & CSS!
+            Hello! My name is Zayn, and I enjoy creating things that live on the
+            internet. My interest in web development started back in 2019 when I
+            first used the browser's developer tools to remove a popup that was
+            blocking the main content in a blog site — turns out playing around
+            with page elements, using dev tools, to see how those change with
+            changes to texts and style properties, taught me a lot about HTML &
+            CSS!
             <br />
             <br />
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Fast-forward to today, and I've self-taught myself all the tools
+            needed to make a custom production web app using different tech
+            stacks. These days, my main focus is systematically building
+            extensible and maintainable programs with fast and clean algorithms.
             <br />
-            <br />I also recently launched a course that covers everything you
-            need to build a web app with the Spotify API using Node & React.
-            JavaScript (ES6+) TypeScript React Eleventy Node.js WordPress
+            <br />I recently launched my startup in Bangladesh, Deep Blue
+            Creatives, which focuses on providing clients with exceptional web
+            design and development solutions and result-driven marketing
+            solutions for thriving businesses.
+            <br />
+            <br />
+            My most recent project is a Spotify analytics web app using React,
+            Node, Express, which uses the Spotify API to provide the user with
+            personalised Spotify data to view their top tracts, sort them with
+            time, filter them based on certain conditions, e.t.c.
             <br />
             <br />
             Here are a few technologies I’ve been working with recently:

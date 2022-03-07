@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledSidebar = styled.article`
   animation: fly-in 0.75s linear 1 forwards;
-  animation-delay: 2s;
+  animation-delay: 1.3s;
   opacity: 0;
   position: fixed;
   bottom: 0px;
@@ -112,7 +112,7 @@ const SidebarLeft = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/zayn-chowdhury-343a86201"
+            href="https://www.linkedin.com/in/zaynchowdhury"
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"

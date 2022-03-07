@@ -50,7 +50,7 @@ const Typography = createGlobalStyle`
 
   p,span,li,a{
     font-family:  'Articulat Regular';
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 
 
   }
