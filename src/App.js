@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Home, Resume } from "./pages";
 
 function App() {
@@ -7,8 +7,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/resume" element={<Resume />} />
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
+      <Route path="" element={<Navigate to="/" />} />
     </BrowserRouter>
   );
 }

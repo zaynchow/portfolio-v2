@@ -1,5 +1,5 @@
 {
-  "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
+  // "homepage": "https://zaynchowdhury.com/",
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,6 @@
     "styled-components": "^5.3.3"
   },
   "scripts": {
-    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
