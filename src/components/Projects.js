@@ -3,6 +3,10 @@ import styled from "styled-components";
 import SingleProject from "./SingleProject";
 
 const StyledSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   position: relative;
   padding: 100px 20px 0px 20px;

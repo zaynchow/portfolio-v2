@@ -18,13 +18,13 @@ const StyledSection = styled.section`
     font-weight: 900;
     letter-spacing: -1px;
     line-height: 1;
-    margin-top: 320px;
+    margin-top: 40vh;
     max-width: 80%;
     text-align: center;
   }
 
   .big-text {
-    font-size: 8em;
+    font-size: 9vw;
 
     background: linear-gradient(
       90deg,
@@ -51,7 +51,7 @@ const StyledSection = styled.section`
 
   .first-line {
     animation: fly-in 0.5s linear 1;
-    font-size: 4rem;
+    font-size: 3vw;
     font-family: "Articulat Extra Bold";
   }
 
