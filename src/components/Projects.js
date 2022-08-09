@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SingleProject from "./SingleProject";
+import icon1 from "../assets/images/project-icon1.svg";
+import icon2 from "../assets/images/project-icon2.svg";
+import icon3 from "../assets/images/project-icon3.svg";
 
 const StyledSection = styled.section`
   display: flex;
@@ -55,6 +58,7 @@ const Projects = () => {
           width="48"
           color="#a2f6cf"
           technologies={["HTML", "CSS", "React", "Express", "Javascript"]}
+          icon={icon3}
           title="Spotify Analytics App"
           year="2022"
           git="https://github.com/zaynchow/spotify-app"
@@ -66,6 +70,7 @@ const Projects = () => {
         <SingleProject
           title="SubsOutlet"
           width="48"
+          icon={icon2}
           technologies={["HTML", "CSS", "JS", "WordPress", "Elementor"]}
           color="#AEE8FA"
           year="2020"
@@ -75,16 +80,20 @@ const Projects = () => {
           license key delivery system.
         </SingleProject>
         <SingleProject
-          title="CommerceCart"
+          title="Sanity E-commerce Store"
           width="100"
+          icon={icon2}
           color="#f9f9f9"
-          year="2021"
-          technologies={["Java", "Swing"]}
-          live=""
-          git="https://github.com/zaynchow/CommerceCart"
+          year="2022"
+          technologies={["NextJs", "SanityIO", "Stripe", "Vercel"]}
+          live="https://sanity-full-stack-e-commerce.vercel.app/"
+          git="https://github.com/zaynchow/sanity-full-stack-e-commerce"
         >
-          Commerce Cart is a full-fledged, user-friendly e-commerce store with
-          an admin dashboard for consumer analytics.
+          A web app implementing NextJs Server Side Rendering(SSR) and
+          Incremental Server Side Regeneration(ISSR) for fast loading dynamic
+          pages, easy scalability and better SEO. Made user-friendly and
+          efficient using Sanity for content management and Stripe as a payment
+          gateway.
         </SingleProject>
       </section>
     </StyledSection>

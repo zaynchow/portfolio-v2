@@ -1,6 +1,6 @@
 const education = [
   {
-    title: "B.Sc in Mathematics",
+    title: "B.Sc in Computer Science",
 
     data: [],
   },

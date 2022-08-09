@@ -155,7 +155,7 @@ const Resume = () => {
           <div className="education-columns--item">
             <h3>
               University of British
-              {window.screen.width > 799 ||
+              {(window.screen.width > 799 && <br />) ||
                 (window.screen.width < 575 && <br />)}
               Columbia
             </h3>

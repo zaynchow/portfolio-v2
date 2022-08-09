@@ -27,8 +27,17 @@ const StyledSection = styled.article`
     h3 {
       font-size: var(--font-m);
       color: #0f270c;
-      margin-left: 8px;
+      margin-left: ${({ icon }) => (icon ? 8 : 0)}px;
       font-family: "Articulat Bold";
+    }
+    figure {
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(${({ icon }) => icon});
+      height: 20px;
+      width: ${({ icon }) => (icon ? 22 : 0)}px;
+      font-weight: "bold";
     }
   }
   span {
@@ -81,12 +90,13 @@ const SingleProject = ({
   children,
   live,
   git,
+  icon,
 }) => {
   return (
-    <StyledSection color={color} width={width}>
+    <StyledSection color={color} width={width} icon={icon}>
       <div className="project-title">
+        <figure class="image"></figure>
         <h3>{title}</h3>
-        <figure></figure>
       </div>
       <span>{year}</span>
       <hr />

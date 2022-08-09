@@ -7,6 +7,13 @@ const projects = [
       "A web app for visualizing personalized Spotify data built with React, Express, and the Spotify API.",
   },
   {
+    title: "Sanity E-commerce App with Stripe",
+    year: 2022,
+
+    description:
+      "An e-commerce web app built with NextJS for frontend and backend along with Sanity for easy,user-friendly content management. Server Side Rendering and SSG enables fast loading of dynamic pages and easy scaling.",
+  },
+  {
     title: "CommerceCart",
     year: 2021,
 

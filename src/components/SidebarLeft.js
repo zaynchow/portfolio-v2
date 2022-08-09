@@ -30,6 +30,7 @@ const StyledSidebar = styled.article`
       color: var(--gray-1);
     }
   }
+
   @media (max-width: 799px) {
     visibility: hidden;
   }

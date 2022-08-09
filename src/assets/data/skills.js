@@ -7,12 +7,13 @@ const skills = [
   {
     title: "Frameworks & Libraries",
 
-    data: ["ReactJS", "NodeJS", "ExpressJS", "Swing"],
+    data: ["ReactJS", "NextJS", "NodeJS", "ExpressJS", "Swing"],
   },
   {
     title: "Applications & Platforms",
 
     data: [
+      "Sanity.io",
       "WordPress",
       "Figma",
       "AdobeXD",
