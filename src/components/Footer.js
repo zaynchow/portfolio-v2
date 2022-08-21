@@ -32,7 +32,7 @@ const StyledSection = styled.section`
   @media (max-width: 575.98px) {
     width: 100%;
     small {
-      font-size: 80%;
+      font-size: 80.01%;
       white-space: nowrap;
     }
   }
