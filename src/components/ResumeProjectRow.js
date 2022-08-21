@@ -10,11 +10,12 @@ const StyledSection = styled.div`
 
   .work-rows--title {
     width: 33.33333%;
-    h3 {
+    a {
       font-size: 2.4rem;
       font-family: "Articulat Bold";
       margin-bottom: 4px;
       line-height: 1;
+      color: inherit;
     }
   }
   .work-rows--description {
@@ -46,11 +47,15 @@ const StyledSection = styled.div`
   }
 `;
 
-const ResumeProjectRow = ({ title, desc, year }) => {
+const ResumeProjectRow = ({ title, desc, year, link }) => {
   return (
     <StyledSection>
       <div className="work-rows--title">
-        <h3>{title}</h3>
+        <h3>
+          <a href={link} target="_blank">
+            {title}
+          </a>
+        </h3>
         <span>{year}</span>
       </div>
       <div className="work-rows--description">

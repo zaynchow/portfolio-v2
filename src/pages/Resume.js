@@ -174,6 +174,7 @@ const Resume = () => {
               title={item.title}
               desc={item.description}
               year={item.year}
+              link={item.link}
             />
           ))}
         </div>
