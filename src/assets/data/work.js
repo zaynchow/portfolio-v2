@@ -1,5 +1,11 @@
 const work = [
   {
+    title: "Mineral Deposit Research Unit, UBC",
+    year: "Full Stack Designer & Developer",
+    description:
+      "Developing re-branded website on WordPress with custom theme using HTML, CSS, JavaScript and PHP. ",
+  },
+  {
     title: "Deep Blue Creatives",
     year: "Co-founder & CEO | 2020 - 2022",
 
@@ -20,7 +26,7 @@ const work = [
   },
   {
     title: "Amazon Fulfillment Center",
-    year: "  Warehouse Associate | 2021 - Present",
+    year: "  Warehouse Associate | 2021 - 2022",
     description:
       "Worked with power tools for the safe loading and unloading of products to/from the production -line and properly handled packages and tools with complying with the state health and safety regulations and practices. Coordinated the work processes with process assistants with excellent verbal and written communication skills to fulfill daily goals.",
   },
