@@ -134,7 +134,7 @@ const Resume = () => {
       <Header />
       <section className="resume-intro">
         <h1>Chowdhury Zayn Ud-Din Shams</h1>
-        <a href="github.com">github.com/zaynchow</a>
+        <a href="https://github.com/zaynchow">github.com/zaynchow</a>
         <p>
           A creative web developer with a passion for design, animation,
           interaction, problem-solving, and for mastering the latest
