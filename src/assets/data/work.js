@@ -1,7 +1,7 @@
 const work = [
   {
     title: "Mineral Deposit Research Unit, UBC",
-    year: "Full Stack Designer & Developer",
+    year: "Full Stack Designer & Developer | 2022 - Present",
     description:
       "Developing re-branded website on WordPress with custom theme using HTML, CSS, JavaScript and PHP. ",
   },
