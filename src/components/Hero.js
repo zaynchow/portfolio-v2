@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const size = 25;
-const speed = 3;
-const peakopacity = 0.7;
+
 
 const StyledSection = styled.section`
   display: flex;
@@ -75,61 +73,6 @@ const StyledSection = styled.section`
     }
   }
 
-  .arrows {
-    position: absolute;
-    top: 90vh;
-    animation: fly-in 0.75s linear 1 forwards;
-    animation-delay: 1.3s;
-    opacity: 0;
-
-    width: ${size}px;
-    height: ${size}px;
-    transform: translate(-50%, -50%);
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-left: ${size / 3}px solid rgba(255, 255, 255, ${peakopacity});
-      border-bottom: ${size / 3}px solid rgba(255, 255, 255, ${peakopacity});
-      transform: translate(${size / 3}px, ${(size * 4) / 3}px) rotate(-45deg);
-      animation: arrows ${speed}s linear infinite;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-left: ${size / 3}px solid rgba(255, 255, 255, ${peakopacity});
-      border-bottom: ${size / 3}px solid rgba(255, 255, 255, ${peakopacity});
-      transform: translate(${(size * 2) / 3}px, 0px) rotate(-45deg);
-      animation: arrows ${speed}s linear infinite ${speed / -2}s;
-    }
-  }
-
-  @keyframes arrows {
-    0% {
-      border-left: ${size / 3}px solid rgba(255, 255, 255, 255);
-      border-bottom: ${size / 3}px solid rgba(255, 255, 255, 255);
-      transform: translate(${size / -6}px, ${(size * 4) / -6}px) rotate(-45deg);
-    }
-    10%,
-    90% {
-      border-left: ${size / 3}px solid rgba(255, 255, 255, 255);
-      border-bottom: ${size / 3}px solid rgba(255, 255, 255, 255);
-    }
-    50% {
-      border-left: ${size / 3}px solid rgba(0, 0, 0, ${peakopacity});
-      border-bottom: ${size / 3}px solid rgba(0, 0, 0, ${peakopacity});
-      transform: translate(${size / -6}px, 0px) rotate(-45deg);
-    }
-    100% {
-      border-left: ${size / 3}px solid rgba(255, 255, 255, 255);
-      border-bottom: ${size / 3}px solid rgba(255, 255, 255, 255);
-      transform: translate(${size / -6}px, ${(size * 4) / 6}px) rotate(-45deg);
-    }
-  }
-
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -169,6 +112,11 @@ const StyledSection = styled.section`
     animation: fly-in 0.75s linear 1 forwards;
     animation-delay: 1.5s;
     opacity: 0;
+    @media (max-width: 575.98px) {
+      width: var(--sizeX);
+      height: var(--sizeY);
+      top: 70vh;
+    }
   }
 
   .scrolldown::before {
