@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const size = 25;
 const speed = 3;
 const peakopacity = 0.7;
@@ -150,6 +151,74 @@ const StyledSection = styled.section`
     }
   }
 
+  .scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
+
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 90vh;
+    animation: fly-in 0.75s linear 1 forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+  }
+
+  .scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+  }
+
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (max-width: 799px) {
     min-height: 100vh;
     h1 {
@@ -194,7 +263,7 @@ const StyledSection = styled.section`
   }
 `;
 
-const Hero = () => {
+const Hero = ({ scrollRef }) => {
   return (
     <StyledSection>
       <h1>
@@ -211,7 +280,13 @@ const Hero = () => {
         </a>
         <a href="mailto:zaynchow@student.ubc.ca">Get in touch</a>
       </div>
-      <div className="arrows"></div>
+
+      <div
+        className="scrolldown"
+        onClick={() => scrollRef.current.scrollIntoView()}
+      >
+        <div className="chevrons"></div>
+      </div>
     </StyledSection>
   );
 };

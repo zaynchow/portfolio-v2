@@ -18,15 +18,11 @@ ${variables};
     font-family: 'Articulat Regular';
     max-width:100%;
     overflow-x:hidden;
-    
-
-   
-
-
+    scroll-behavior: smooth;
 
     @media (max-width:799px){
 
-padding: 0px 50px;
+    padding: 0px 50px;
 }
 @media (max-width:575.98px){
 

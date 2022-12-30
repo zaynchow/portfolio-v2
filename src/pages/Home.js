@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useRef } from "react";
 import {
   Header,
   Hero,
@@ -20,11 +21,12 @@ const StyledSection = styled.div`
 
 const Home = () => {
   document.body.style = "background: black";
+  const scrollRef = useRef(null);
   return (
     <StyledSection>
       <Header color="dark" />
-      <Hero />
-      <About />
+      <Hero scrollRef={scrollRef} />
+      <About scrollRef={scrollRef} />
       <SidebarRight />
       <SidebarLeft />
       <Projects />

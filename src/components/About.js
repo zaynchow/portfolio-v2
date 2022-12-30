@@ -121,9 +121,9 @@ const StyledSection = styled.section`
   }
 `;
 
-const About = () => {
+const About = ({ scrollRef }) => {
   return (
-    <StyledSection>
+    <StyledSection ref={scrollRef}>
       <div className="heading" id="about-start">
         <h2>About Me</h2>
       </div>
