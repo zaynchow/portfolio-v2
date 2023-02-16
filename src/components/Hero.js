@@ -115,7 +115,7 @@ const StyledSection = styled.section`
     @media (max-width: 575.98px) {
       width: var(--sizeX);
       height: var(--sizeY);
-      top: 90vh;
+      top: 70vh;
     }
   }
 
