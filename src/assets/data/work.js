@@ -1,4 +1,10 @@
-const work = [
+const work = [ 
+  {
+    title: "Jostle Corporation",
+    year: "UI Developer | 2022 - Present",
+    description:
+      "Developing a dedicated Search page with improved searching functionalities and filtering capibilities in React. ",
+  },
   {
     title: "Mineral Deposit Research Unit, UBC",
     year: "Full Stack Designer & Developer | 2022 - Present",
