@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Spotify Analytics App",
     year: 2022,
-    link: "https://spotify-analytics-data-app.herokuapp.com/",
+    link: "https://spotify-app-frontend.vercel.app/",
     description:
       "A web app for visualizing personalized Spotify data built with React, Express, and the Spotify API.",
   },

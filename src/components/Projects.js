@@ -62,7 +62,7 @@ const Projects = () => {
           title="Spotify Analytics App"
           year="2022"
           git="https://github.com/zaynchow/spotify-app"
-          live="https://spotify-analytics-data-app.herokuapp.com/"
+          live="https://spotify-app-frontend.vercel.app/"
         >
           A web app for visualizing personalized Spotify data built with React,
           Express, and the Spotify API.
