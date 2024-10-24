@@ -8,8 +8,9 @@ const work = [
   {
     title: "UBC IT at Sauder",
     year: "AV/IT Rover | 2023 - Present",
-    description: "Troubleshoot and resolve issues with projectors, microphones, speakers, computers, and other AV systems."
-  }
+    description:
+      "Troubleshoot and resolve issues with projectors, microphones, speakers, computers, and other AV systems.",
+  },
   {
     title: "Mineral Deposit Research Unit, UBC",
     year: "Full Stack Designer & Developer | 2022 - 2023",
