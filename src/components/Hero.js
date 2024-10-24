@@ -221,7 +221,7 @@ const Hero = ({ scrollRef }) => {
       </h1>
       <div className="buttons">
         <a
-          href="/Resume - Chowdhury Zayn Ud-Din Shams.pdf"
+          href="/Resume- Chowdhury Zayn Ud-Din Shams.pdf"
           download="Zayn's Resume"
         >
           Download Resume
