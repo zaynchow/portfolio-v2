@@ -10,8 +10,10 @@ const education = [
     data: [
       "Software Construction",
       "Algorithms and Data Structures",
-      "Computation, Programs, and Programming",
       "Models of Computation",
+      "Introduction to Software Engineering",
+      "Intermediate Algorithm Design and Analysis",
+      "Introduction to AI",
     ],
   },
 ];

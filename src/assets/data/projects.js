@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: "HAB Securities Corporate Website",
+    year: 2023,
+    link: "https://habsecurities.com/",
+    description:
+      "An aesthetic minimal corporate website for a leading company implemented with Next.js along with Sanity.io for easy, manageable content management.",
+  },
+  {
     title: "Spotify Analytics App",
     year: 2022,
     link: "https://spotify-analytics-data-app.herokuapp.com/",

@@ -1,13 +1,18 @@
-const work = [ 
+const work = [
   {
     title: "Jostle Corporation",
-    year: "UI Developer | 2022 - Present",
+    year: "UI Developer | 2023 - Present",
     description:
-      "Developing a dedicated Search page with improved searching functionalities and filtering capibilities in React. ",
+      "Developing, integrating and maintaining a dedicated Search page in React with advanced search features such as including complex filtering, pagination, dynamic modal views and 3rd party integrations.",
   },
   {
+    title: "UBC IT at Sauder",
+    year: "AV/IT Rover | 2023 - Present",
+    description: "Troubleshoot and resolve issues with projectors, microphones, speakers, computers, and other AV systems."
+  }
+  {
     title: "Mineral Deposit Research Unit, UBC",
-    year: "Full Stack Designer & Developer | 2022 - Present",
+    year: "Full Stack Designer & Developer | 2022 - 2023",
     description:
       "Developing re-branded website on WordPress with custom theme using HTML, CSS, JavaScript and PHP. ",
   },

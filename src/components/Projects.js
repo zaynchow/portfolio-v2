@@ -68,16 +68,17 @@ const Projects = () => {
           Express, and the Spotify API.
         </SingleProject>
         <SingleProject
-          title="SubsOutlet"
+          title="HAB Securities LTD"
           width="48"
           icon={icon2}
-          technologies={["HTML", "CSS", "JS", "WordPress", "Elementor"]}
+          technologies={["NextJs", "SanityIO", "Styled Components", "Heroku"]}
           color="#AEE8FA"
-          year="2020"
+          year="2023"
           live="https://subsoutlet.com"
         >
-          Production e-commerce website with third-party chatbot and auto
-          license key delivery system.
+          Production corporate website leveraging SSR and SSG offering fast load
+          times, seamless navigation and easy content management though
+          SanityIO.
         </SingleProject>
         <SingleProject
           title="Sanity E-commerce Store"
